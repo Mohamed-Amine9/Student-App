@@ -1,0 +1,42 @@
+<br />
+<br />
+
+<table class="table table-striped shadow-none p-3 mb-5 bg-light rounded">
+  <thead class="thead-dark headcolor">
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">mean</th>
+      <th scope="col">result</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{ student.nom }}</td>
+      <td>{{ student.prenom }}</td>
+      <td>{{ student.age }}</td>
+      <td>{{ student.moyenne }}</td>
+      <td *ngIf="student.moyenne >= 10">Admi(s)</td>
+      <td *ngIf="student.moyenne < 10">Refusée</td>
+      <td>
+        <button
+          type="button"
+          (click)="updateStudentButton(student.id)"
+          class="btn btn-info"
+        >
+          Update
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          style="margin-left: 10px"
+          (click)="delete(student.id)"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,28 @@
+{
+  "/getAll":{
+    "target":"http://localhost:8080/api/v1/",
+    "secure":false
+
+  },
+  "/add":{
+    "target":"http://localhost:8080/api/v1/",
+    "secure":false
+  },
+  "/getById/*":{
+    "target":"http://localhost:8080/api/v1/",
+    "secure":false
+  },
+  "/updatestudent/*":{
+    "target":"http://localhost:8080/api/v1/",
+    "secure":false
+  },
+  "/deleteStudent/*":{
+    "target":"http://localhost:8080/api/v1/",
+    "secure":false
+  },
+  "/findAll/*":{
+    "target":"http://localhost:8080/api/v1/",
+    "secure":false
+  }
+
+}

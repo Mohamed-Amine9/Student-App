@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="studentList">Student List</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="addStudent">Add Student</a>
+      </li>
+    </ul>
+  </div>
+  <nav class="navbar navbar-light bg-light">
+    <input
+      class="form-control mr-sm-2"
+      type="search"
+      placeholder="Search"
+      aria-label="Search"
+      [(ngModel)]="input"
+      (keyup.enter)="search()"
+    />
+    <button class="btn btn-outline-success" type="submit" (click)="search()">
+      Search
+    </button>
+  </nav>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

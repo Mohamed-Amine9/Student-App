@@ -1,0 +1,52 @@
+<br />
+<br />
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col">
+        <input
+          type="text"
+          [(ngModel)]="student.nom"
+          class="form-control"
+          placeholder="First Name"
+          name="nom"
+        />
+      </div>
+      <div class="col">
+        <input
+          type="text"
+          [(ngModel)]="student.prenom"
+          class="form-control"
+          placeholder="Last Name"
+          name="prenom"
+        />
+      </div>
+    </div>
+    <br />
+
+    <div class="row">
+      <div class="col">
+        <input
+          type="text"
+          [(ngModel)]="student.age"
+          class="form-control"
+          placeholder="Age"
+          name="age"
+        />
+      </div>
+      <div class="col">
+        <input
+          type="number"
+          [(ngModel)]="student.moyenne"
+          class="form-control"
+          placeholder="Mean"
+          name="moyenne"
+        />
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <button type="submit" class="btn btn-success">Update student</button>
+  </form>
+</div>
